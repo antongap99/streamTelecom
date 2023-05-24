@@ -10,6 +10,7 @@
   --modal-text: #252525;
   --switch: #ffffff;
   --switch-bg: #2d2d2d;
+  --modal-close: #252525;
 }
 
 .dark {
@@ -24,4 +25,5 @@
   --modal-text: #f8f8f8;
   --switch: #252525;
   --switch-bg: #e2e2e2;
+  --modal-close: #F8F8F8;
 }
