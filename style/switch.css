@@ -37,7 +37,7 @@ input {
   content: "";
   position: absolute;
   top: 10px;
-  left: 16px;
+  left: 10px;
   width: 30px;
   height: 30px;
   border-radius: 50%;
@@ -46,7 +46,7 @@ input {
 }
 
 .dark .slider::before {
-  transform: translateX(45px);
+  transform: translateX(48px);
   background-color: var(--switch-bg);
 }
 
