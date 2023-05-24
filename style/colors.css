@@ -1,0 +1,27 @@
+.light {
+  --bg: #f5f5f5;
+  --modal-bg: #ffffff;
+  --setting-bg: #ffffff;
+  --setting-border: #e2e2e2;
+  --setting-title: #252525;
+  --setting-icon-bg: #e6f4fb;
+  --setting-text: #1fa2de;
+  --overlay: #f5f5f5;
+  --modal-text: #252525;
+  --switch: #ffffff;
+  --switch-bg: #2d2d2d;
+}
+
+.dark {
+  --bg: #2d2d2d;
+  --modal-bg: #2d2d2d;
+  --setting-bg: #252525;
+  --setting-border: #252525;
+  --setting-title: #ffffff;
+  --setting-icon-bg: #404040;
+  --setting-text: #31beff;
+  --overlay: rgba(45, 45, 45, 0.75);
+  --modal-text: #f8f8f8;
+  --switch: #252525;
+  --switch-bg: #e2e2e2;
+}

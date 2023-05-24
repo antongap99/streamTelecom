@@ -1,0 +1,43 @@
+/*popup*/
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(overlay);
+}
+
+.modal__description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: var(--modal-text);
+}
+.modal__title {
+  font-weight: 500;
+  font-size: 20px;
+  color: var(--modal-text);
+  margin-bottom: 24px;
+}
+.modal {
+  position: relative;
+  padding: 48px;
+  background: var(--modal-bg);
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.24);
+  border-radius: 4px;
+  max-width: 594px;
+}
+
+.modal__close {
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 14px;
+  right: 14px;
+}

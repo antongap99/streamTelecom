@@ -1,0 +1,23 @@
+html {
+  box-sizing: border-box;
+  height: 100vh;
+  font-family: "Montserrat", sans-serif;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  position: relative;
+  height: 100%;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}

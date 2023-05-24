@@ -1,0 +1,92 @@
+
+.main {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  background-color: var(--bg);
+}
+
+.setting {
+  padding: 24px;
+  width: 400px;
+  border-radius: 4px;
+  border: 1px solid var(--setting-border);
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  background-color: var(--setting-bg);
+}
+
+.setting__header {
+  display: flex;
+  justify-content: space-between;
+  color: var(--setting-title);
+}
+
+.setting__icon-wrapper {
+  width: 50px;
+  height: 50px;
+  background-color: var(--setting-icon-bg);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header__text {
+  width: 276px;
+}
+
+.header__title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+  color: var(--setting-title);
+}
+
+.header__subtitle {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #919191;
+}
+
+.setting__auth,
+.setting__secure,
+.setting__protocols {
+  color: var(--setting-text);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.setting__auth {
+  flex-wrap: wrap;
+  row-gap: 4px;
+  column-gap: 10px;
+}
+
+.auth__status {
+  color: #919191;
+}
+
+.button,
+.icon,
+.setting__auth {
+  cursor: pointer;
+}
+
+.setting__button {
+  padding: 12px 100px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  background: transparent;
+  border: 1px solid #4db5e4;
+  border-radius: 4px;
+  color: var(--setting-text);
+}

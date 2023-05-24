@@ -1,12 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Stream Telecom</title>
-</head>
-<body>
-  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/index.css" />
+    <script type="module" src="./script/index.js"></script>
+    <title>Stream Telecom</title>
+  </head>
+  <body class="light">
+    <main class="main">
+      <div class="setting">
+        <div class="setting__header">
+          <div class="setting__icon-wrapper">
+            <img
+              class="setting__icon"
+              src="./assets/icons/setting.svg"
+              alt="setting"
+            />
+          </div>
+          <div class="header__text">
+            <h2 class="header__title">Настройки</h2>
+            <p class="header__subtitle">Логин: 77777777777</p>
+          </div>
+        </div>
+        <div class="setting__auth" id="auth">
+          <p class="auth__title">Двухфакторная аутентификация</p>
+          <img
+            class="icon setting__icon"
+            src="./assets/icons/edit.svg"
+            alt="редактировать"
+          />
+          <p class="auth__status">Не подключена</p>
+        </div>
+        <div class="setting__secure">
+          <p class="setting__text">Настройки безопасности и API</p>
+          <img
+            class="icon setting__icon"
+            src="./assets/icons/arrow.svg"
+            alt="подробнее"
+          />
+        </div>
+        <div class="setting__protocols">
+          <p class="setting__text">Все протоколы интеграции</p>
+          <img
+            class="icon setting__icon"
+            src="./assets/icons/arrow.svg"
+            alt="подробнее"
+          />
+        </div>
+        <button class="button setting__button">Создать пароль для API</button>
+      </div>
+      <div class="toggle-switch" id="swither">
+        <label for="switch" class="toggle-switch__label">
+          <span class="slider"></span>
+        </label>
+      </div>
+    </main>
+  </body>
 </html>
