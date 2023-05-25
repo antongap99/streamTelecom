@@ -70,13 +70,22 @@
   column-gap: 10px;
 }
 
+.setting__text {
+  transition: color 0.2s ease-in-out;
+}
+
+.setting__auth .setting__text:hover {
+  color:#537b8b;
+  transition: color 0.3s ease-in-out;
+}
+
 .auth__status {
   color: #919191;
 }
 
 .button,
 .icon,
-.setting__auth {
+.setting__text {
   cursor: pointer;
 }
 

@@ -4,7 +4,8 @@ import { createPopup } from "./create.js";
 export const popupController = () => {
   const auth = document.getElementById("auth");
 
-  auth.addEventListener("click", () => {
+  auth.addEventListener("click", (e) => {
+    e.preventDefault()
     const popup = createPopup(popupData);
     document.body.append(popup);
   });
