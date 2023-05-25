@@ -1,15 +1,7 @@
-const createElem = ({ cssClass, children, tag = "div", src }) => {
+const createElem = ({ cssClass, children, tag = "div" }) => {
   const elem = document.createElement(tag);
   elem.classList.add(cssClass);
-
-  if (children && Array.isArray(children)) {
-    elem.append(...children);
-  } else if (children) {
-    elem.append(children);
-  }
-
-  if (tag === "img") elem.src = src;
-
+  elem.append(...children);
   return elem;
 };
 
@@ -24,13 +16,13 @@ export const createPopup = (data) => {
   const description = createElem({
     tag: "p",
     cssClass: "modal__description",
-    children: data.description,
+    children: [data.description],
   });
 
   const title = createElem({
     cssClass: "modal__title",
-    tag: "h1",
-    children: data.title,
+    tag: "h2",
+    children: [data.title],
   });
 
   const modal = createElem({
@@ -38,11 +30,11 @@ export const createPopup = (data) => {
     children: [title, description],
   });
 
-  modal.insertAdjacentHTML('beforeend', createClose('modal__close'));
+  modal.insertAdjacentHTML("beforeend", createClose("modal__close"));
 
   const overlay = createElem({
     cssClass: "overlay",
-    children: modal,
+    children: [modal],
     tag: "div",
   });
 
