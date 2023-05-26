@@ -9,7 +9,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: var(overlay);
+  background-color: var(--overlay);
 }
 
 .modal__description {
@@ -18,12 +18,14 @@
   line-height: 28px;
   color: var(--modal-text);
 }
+
 .modal__title {
   font-weight: 500;
   font-size: 20px;
   color: var(--modal-text);
   margin-bottom: 24px;
 }
+
 .modal {
   position: relative;
   padding: 48px;
